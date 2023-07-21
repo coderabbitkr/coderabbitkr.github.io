@@ -7,6 +7,15 @@
     text-align: center;
 }
 
+a {
+    height: 45px;
+    border: 1px solid #ff4320;
+    background-color: #ff4320;
+    color: rgb(255, 255, 255);
+    transition: border 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
+    border-radius: 25px;
+}
+
 form {
     font-size: 20px;
 }
@@ -31,11 +40,16 @@ input[type="text"] {
     padding: 0px 16px;
 
 }
-input[type="submit"] {
-    height: 45px;
-    border: 1px solid #ff4320;
-    background-color: #ff4320;
-    color: rgb(255, 255, 255);
-    transition: border 0.3s ease 0s, background-color 0.3s ease 0s, color 0.3s ease 0s;
-    border-radius: 25px;
+
+#wrapper {
+    height: 250px;
+    width: 250px;
+    display: grid;
+    position: absolute;
+    border: 1px solid #32353c;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 50px);
+}
+img[src="image/Ekd.png"]{
+    height: 50px;
 }
