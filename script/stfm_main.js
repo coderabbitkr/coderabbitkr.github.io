@@ -1,15 +1,4 @@
-```
-function hide() {
-    document.getElementById("hide").style.visibility = "hidden";
-}
-function SetAttr(attr,val,parent) {
-    var node = document.createAttribute(attr);
-    node.value = val;
-    parent.setAttributeNode(node);
-}
-let c_prime = document.getElementById("para1").cloneNode(true);
-```
-function dr(){
+function Start(){
     let canvas = document.getElementById('tutorial');
     if (canvas.getContext){
         let ctx = canvas.getContext('2d');
@@ -21,18 +10,21 @@ function dr(){
         draw(){
             ctx.fillStyle = 'green';
             ctx.fillRect(this.x,this.y, this.width,this.height);}}
-        function OneFrame() {
-            requestAnimationFrame(OneFrame);
-            ctx.clearRect(0, 0, canvas.width, canvas.height);
-            farm.x++;
+
+        let keyw = false; let keya = false; let keys = false; let keyd = false;
+        function OneFrame() { requestAnimationFrame(OneFrame);
+            //document.addEventListener('keydown',function(e) {if (e.code === 'KeyW') {keyw = true;} })
+            //document.addEventListener('keydown',function(e) {if (e.code === 'KeyA') {keya = true;} })
+            //document.addEventListener('keydown',function(e) {if (e.code === 'KeyS') {keys = true;} })
+            //document.addEventListener('keydown',function(e) {if (e.code === 'KeyD') {keyd = true;} })
+            //if (keyw = true) {farm.y--;}
+            //if (keya = true) {farm.x--;}
+            //if (keys = true) {farm.y++;}
+            //if (keyd = true) {farm.x++;}
+            farm.y++;
+            ctx.clearRect(0,0, canvas.width,canvas.height);
             farm.draw();
         }
-        OneFrame();
+        OneFrame()
     }
 }
-function OneFrame() {
-    requestAnimationFrame(OneFrame());
-    farm.x++;
-    farm.draw();
-}
-OneFrame();
