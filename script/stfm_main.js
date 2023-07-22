@@ -11,6 +11,7 @@ function Start(){
             ctx.fillStyle = 'green';
             ctx.fillRect(this.x,this.y, this.width,this.height);}}
 
+        let count = 0;
         //let keyw = false; let keya = false; let keys = false; let keyd = false;
         function OneFrame() { requestAnimationFrame(OneFrame);
             //document.addEventListener('keydown',function(e) {if (e.code === 'KeyW') {keyw = true;} })
@@ -21,7 +22,13 @@ function Start(){
             //if (keya = true) {farm.x--;}
             //if (keys = true) {farm.y++;}
             //if (keyd = true) {farm.x++;}
-            farm.y++;
+            count++;
+            if (count % 2 == 1) {
+                farm.y++;
+            } else {
+                farm.x++;
+            }
+
             ctx.clearRect(0,0, canvas.width,canvas.height);
             farm.draw();
         }
