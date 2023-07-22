@@ -11,7 +11,7 @@ function Start(){
             ctx.fillStyle = 'green';
             ctx.fillRect(this.x,this.y, this.width,this.height);}}
 
-        let keyw = false; let keya = false; let keys = false; let keyd = false;
+        //let keyw = false; let keya = false; let keys = false; let keyd = false;
         function OneFrame() { requestAnimationFrame(OneFrame);
             //document.addEventListener('keydown',function(e) {if (e.code === 'KeyW') {keyw = true;} })
             //document.addEventListener('keydown',function(e) {if (e.code === 'KeyA') {keya = true;} })

@@ -1,0 +1,95 @@
+@font-face {
+    font-family: Cookie;
+    src: url(font/CookieRunRegular.ttf);
+
+
+} * {
+    font-family: Cookie;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    box-sizing: border-box;
+
+
+} body { 
+    margin: 0;
+
+
+} header {
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ff4320, #fff);
+    padding: 20px 10px;
+
+
+} img.rogo {
+    background-color: #fff;
+    border-radius: 50px;
+    border: 10px solid #000;
+
+
+} div[class="menu"] a {
+    border: 10px;
+    border-color: #ff4320;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000;
+
+
+} form {
+    font-size: 20px;
+
+
+} h2 {
+    font-size: 24px;
+    line-height: 28px;
+    padding-top: 44px;
+    padding: 10px;
+
+
+} input[type="text"] {
+    height: 44px;
+    font-size: 20px;
+    line-height: 22px;
+    color: rgb(44, 49, 61);
+    border-radius: 5px;
+    padding: 0px 16px;
+
+
+} #wrapper {
+    height: 250px;
+    width: 250px;
+    display: grid;
+    position: absolute;
+    border: 1px solid #32353c;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 50px);
+
+
+} img[src="image/Ekd.png"] {
+    height: 50px;
+
+
+} table {
+    border: 1px solid #333;
+    border-radius: 2px;
+
+
+} td {
+    background-image: url("image/Ekd.png");
+    background-size: 50px 50px;
+    height: 50px; width: 50px;
+    color: #fff;
+    border-radius: 5px;
+
+
+} td:hover, td:focus{
+    border-color: #e89;
+    color: #e89;
+
+
+} tfoot {
+    background-color: #333;
+    color: #fff;
+
+
+} canvas { border: 1px solid black; }
