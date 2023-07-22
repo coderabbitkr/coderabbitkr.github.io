@@ -9,21 +9,69 @@
 
     <!--stylesheet-->
     <link href="main.css" rel="stylesheet">
-
     
+    <script src="script/stfm_main.js"></script>
 </head>
 
-<body>
+<body onload="dr();">
 	<img src="image/strawberry.png" loading="lazy">
+    <table>
+        <canvas id="tutorial" width="250" height="250">
 
+        </canvas>
+    </table>
 	<h2>딸기상자</h2>
     
     <a href="index2.html" id="hide">자세히보기</a>
 
-    <div class="container" id="farrrrms"></div>
-    
-    <!--script-->
-    <script src="script/stfm_main.js"></script>
+    <div class="TheTable" id="FarmRoom"></div>
+    <div class="farm" id="clone">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="5">The Sans's farm</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td onclick="FarmClick()">99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                </tr>
+                <tr>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                </tr>
+                <tr>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                </tr>
+                <tr>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                </tr>
+                <tr>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                    <td>99%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
 </body>
 
 </html>

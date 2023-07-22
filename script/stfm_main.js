@@ -1,3 +1,4 @@
+```
 function hide() {
     document.getElementById("hide").style.visibility = "hidden";
 }
@@ -6,30 +7,32 @@ function SetAttr(attr,val,parent) {
     node.value = val;
     parent.setAttributeNode(node);
 }
-function Farm() {
-    var newFarm = document.createElement("div");
-    document.getElementById("farrrrms").appendChild(newFarm);
-
-    SetAttr("class","farm",newFarm);
-    SetAttr("id","wrapper",newFarm);
-
-    var i, j;
-    for (i=  1  ;i<=  5  ;i++) {
-        for (j=  1  ;j<=  5  ;j++) {
-            var newPixel = document.createElement("div");
-            newFarm.appendChild(newPixel);
-
-            SetAttr("id","00",newPixel);
-        
-            var newImg = document.createElement("img");
-            newPixel.appendChild(newImg);
-        
-            SetAttr("src","image/Ekd.png",newImg);
-        
-            var loadingNode = document.createAttribute("loading");
-            loadingNode.value = "lazy";
-            newImg.setAttributeNode(loadingNode);
+let c_prime = document.getElementById("para1").cloneNode(true);
+```
+function dr(){
+    let canvas = document.getElementById('tutorial');
+    if (canvas.getContext){
+        let ctx = canvas.getContext('2d');
+        let farm = {
+            x : 100,
+            y : 100,
+            width : 50,
+            height : 50,
+        draw(){
+            ctx.fillStyle = 'green';
+            ctx.fillRect(this.x,this.y, this.width,this.height);}}
+        function OneFrame() {
+            requestAnimationFrame(OneFrame);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            farm.x++;
+            farm.draw();
         }
+        OneFrame();
     }
 }
-Farm()
+function OneFrame() {
+    requestAnimationFrame(OneFrame());
+    farm.x++;
+    farm.draw();
+}
+OneFrame();
